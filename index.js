@@ -8,6 +8,8 @@ Game.prototype.clearBoard = function() {
   this.turn = 0;
 };
 
+var game = new Game();
+
 $('.zero').on('click', function() {
   this.tracker[0] = this.turn % 2 === 0 ? 'X' : 'O';
   this.turn++;
